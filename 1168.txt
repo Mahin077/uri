@@ -1,0 +1,39 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string vv ;
+    int n, led=0,i=0;
+    cin>>n;
+
+
+    while(n)
+    {
+        cin>>vv;
+        i = 0;
+        led=0;
+
+        for(int j=0;j<vv.size();j++){
+
+
+            if(vv.at(i) == '1')
+                led += 2;
+            else if(vv.at(i) == '2' || vv.at(i) == '3' || vv.at(i) == '5')
+                led += 5;
+            else if(vv.at(i) == '4')
+                led += 4;
+            else if(vv.at(i) == '6' || vv.at(i) == '9' || vv.at(i) == '0')
+                led += 6;
+            else if(vv.at(i) == '7')
+                led += 3;
+            else if(vv.at(i) == '8')
+                led += 7;
+
+            i++;
+
+         }
+        cout<<led<<" leds"<<endl;
+        n--;
+    }
+    return 0;
+}

@@ -1,0 +1,45 @@
+//c++
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    cin>>ws;
+    while(n--)
+    {
+        char c[100];
+        fgets(c,100,stdin);
+
+        if(c[0]!=' ')
+        {
+            cout<<c[0];
+        }
+        for(int i=1;i<strlen(c)-1;i++)
+        {
+            if(c[i] == ' ' && c[i+1]!=' ')
+            {
+              cout<<c[i+1];
+            }
+        }
+        cout<<endl;
+    }
+
+}
+
+//python
+n = int(input())
+while n>0:
+    s = input()
+    if s[0]!=' ' and s[0]!='·':
+        print(s[0],end="")
+    for i in range(1,len(s)-1):  
+        if (s[i] == ' ' and s[i+1]!=' ') or (s[i] == '·' and s[i+1]!='·'):
+            print(s[i+1],end="") 
+    print()
+    n -=1
+
+
+
+

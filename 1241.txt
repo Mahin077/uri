@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string s1,s2;
+    int n;
+    cin>>n;
+    while(n--){
+        int countt=0;
+        cin>>s1>>s2;
+        if(s1.size()>=s2.size())
+        {
+            int c = (s1.size()-1)-(s2.size()-1);
+            for(int i=0;i<s2.size();i++)
+            {
+                if(s1[c]==s2[i])
+                {
+                    countt++;
+                }
+                c++;
+            }
+        }
+
+        if(countt==s2.size())
+        {
+            cout<<"encaixa"<<endl;
+        }
+        else
+            cout<<"nao encaixa"<<endl;
+
+
+    }
+
+
+
+}
+
+

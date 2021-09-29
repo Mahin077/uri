@@ -1,0 +1,8 @@
+//python
+x = input()
+x= x.translate({ord(i): None for i in 'bcdfghjklmnpqrstvwxyz'})
+y= x[::-1]
+if y==x:
+    print("S")
+else:
+    print("N")

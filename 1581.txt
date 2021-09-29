@@ -1,0 +1,31 @@
+n = int(input())
+while n:
+    c = 0
+    nn = int(input())
+    s = input()
+    while nn>1:
+        s1 = input()
+        if s!=s1:
+            c= 1
+        nn-=1
+    if c==0:
+        print(s)
+    else:
+        print("ingles")
+    n-=1
+n = int(input())
+while n:
+    c = 0
+    cc = 0
+    summ = 0
+    nn = int(input())
+    while nn:
+        s = input()
+        for i in s:
+           summ = summ + ord(i)-65 + c + cc
+           cc+=1
+        cc = 0
+        c+=1
+        nn-=1
+        print(summ)
+    n-=1    

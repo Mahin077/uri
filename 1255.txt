@@ -1,0 +1,24 @@
+//python
+
+import collections
+from typing import Counter
+
+n = int(input())
+while n>0:
+  s = input()
+  s = s.lower()
+  x = Counter(s)
+  strin = ""
+
+  maxx = max(x['a'],x['b'],x['c'],x['d'],x['e'],x['f'],x['g'],x['h'],x['i'],x['j'],x['k'],x['l'],x['m'],x['n'],x['o'],x['p'],x['q'],x['r'],x['s'],x['t'],x['u'],x['v'],x['w'],x['x'],x['y'],x['z'])
+  for i in x.elements():
+      if x[i]==maxx:
+          strin += i
+ 
+  res = "".join(set(strin)) 
+  strinn = "".join(sorted(res))     
+  print(strinn) 
+  n-=1  
+    
+
+

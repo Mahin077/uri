@@ -1,0 +1,16 @@
+n = int(input())
+while n:
+    c = 0
+    cc = 0
+    summ = 0
+    nn = int(input())
+    while nn:
+        s = input()
+        for i in s:
+           summ = summ + ord(i)-65 + c + cc
+           cc+=1
+        cc = 0
+        c+=1
+        nn-=1
+        print(summ)
+    n-=1    

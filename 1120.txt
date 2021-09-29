@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    char a;
+    long long int b;
+    string s1;
+
+
+    while(1)
+    {   long long int re=0;
+        cin>>a>>b;
+        if(a=='0' && b==0)
+            break;
+        string s2= to_string(b);
+
+        for(int i=0;i<s2.size();i++)
+        {
+            if(a!=s2[i])
+            {
+                re = (re * 10)+s2[i] - 48;
+            }
+        }
+        cout<<re<<endl;
+
+    }
+
+
+
+}
+
+

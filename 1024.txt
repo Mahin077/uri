@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+
+
+   int a;
+   string s;
+   cin>>a;
+   cin>>ws;
+    while(a--)
+    {
+        getline(cin,s);
+        for(int i=0;i<s.size();i++)
+        {
+           if(s[i]>=65 && s[i]<=122)
+            {
+                s[i]+=3;
+            }
+        }
+         reverse(s.begin(),s.end());
+
+ for(int i=(s.size()/2);i<s.size();i++)
+ {
+     s[i]-=1;
+ }
+cout<<s<<endl;
+ }
+
+
+}
+
+
